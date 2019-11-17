@@ -1,14 +1,16 @@
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f7f7f7;
 }
 
 #portfolio-navbar {
   padding-top: 50px;
+  padding-bottom: 70px;
   background-color: #f7f7f7;
 }
 
 .uk-logo {
+  padding: 0;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   color: #333 !important;
@@ -20,4 +22,28 @@ body {
 
 .uk-navbar-nav > li.uk-active > a {
   color: #999 !important;
+}
+
+.page-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me-intro {
+  width: 60vw;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding:0;
+}
+
+.about-me-body {
+  width: 60vw;
+  font-family: "Roboto", sans-serif;
+}
+
+.portfolio-section {
+  margin-top: 200px;
 }

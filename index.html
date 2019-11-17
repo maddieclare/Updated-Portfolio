@@ -16,7 +16,7 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto&display=swap"
+      href="https://fonts.googleapis.com/css?family=Raleway:500|Roboto:500|Roboto:300|Roboto&display=swap"
       rel="stylesheet"
     />
 
@@ -28,25 +28,65 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
 
     <!-- HTML body -->
-    <div class="uk-container">
-      <nav class="uk-navbar-container" id="portfolio-navbar" uk-navbar>
-        <div class="uk-navbar-left">
-          <a class="uk-navbar-item uk-logo" href="#">Maddie Gribble</a>
+    <div class="page-body">
+      <header class="uk-container">
+        <nav class="uk-navbar-container" id="portfolio-navbar" uk-navbar>
+          <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="#">Maddie Gribble</a>
+          </div>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="index.html">About</a></li>
+              <li>
+                <a class="inactive-navbar-link" href="portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="inactive-navbar-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section class="uk-container about-me-section">
+        <h2 class="page-title">About me.</h2>
+        <h2 class="about-me-intro">
+          I'm a Perth-based web developer-in-training with a foundational
+          knowledge of HTML, CSS and Javascript.
+        </h2>
+        <p class="about-me-body">
+          I currently work in HR for local government and graduated from UWA
+          earlier this year with a BA in linguistics. I am very happy to have
+          discovered coding, as it allows me to put my love of language-learning
+          to more practical use, as well as flex my creative and problem-solving
+          muscles. I hope to eventually become a full-stack web developer and
+          earn my first million by 25.
+        </p>
+
+        <p class="about-me-body">
+          When I'm not working or studying, I enjoy baking, gardening,
+          swing-dancing, video games and dog-watching. You can find me on
+          LinkedIn
+          <a href="https://www.linkedin.com/in/madeleine-gribble-466417192/"
+            >here</a
+          >
+          or visit
+          <a href="https://github.com/maddieclare">my GitHub profile</a> for
+          more examples of my work.
+        </p>
+      </section>
+
+      <div uk-grid="masonry-true" class="portfolio-section">
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+          <h3 class="uk-card-title">Default</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
         </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-navbar-nav">
-            <li class="uk-active"><a href="index.html">About</a></li>
-            <li>
-              <a class="inactive-navbar-link" href="portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a class="inactive-navbar-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
     </div>
 
     <!-- Custom JS -->
