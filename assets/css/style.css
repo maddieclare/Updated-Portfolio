@@ -3,9 +3,7 @@ body {
   background-color: #f7f7f7;
 }
 
-#portfolio-navbar {
-  padding-top: 50px;
-  padding-bottom: 70px;
+.header-section {
   background-color: #f7f7f7;
 }
 
@@ -49,6 +47,10 @@ body {
   padding-bottom: 300px;
 }
 
+.uk-card {
+  box-shadow: none;
+}
+
 #hangman-game {
   background-image: url("../images/placeholder-1.png");
   background-size: 150%;
@@ -88,3 +90,8 @@ body {
 .contact-section {
   padding-bottom: 250px;
 }
+
+/* .uk-legend {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+} */

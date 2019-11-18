@@ -28,29 +28,37 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
 
     <!-- HTML body -->
-    <div class="page-body">
-      <header class="uk-container">
-        <nav class="uk-navbar-container" id="portfolio-navbar" uk-navbar>
-          <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo" href="#">Maddie Gribble</a>
-          </div>
-          <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-              <li class="uk-active"><a href="index.html">About</a></li>
-              <li>
-                <a class="inactive-navbar-link" href="portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a class="inactive-navbar-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+    <section class="uk-section header-section">
+      <div
+        uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top:200"
+      >
+        <header class="uk-header uk-flex uk-flex-center">
+          <nav class="uk-navbar-container uk-width-5-6" uk-navbar>
+            <div class="uk-navbar-left">
+              <a class="uk-navbar-item uk-logo" href="#">Maddie Gribble</a>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li class="uk-active"><a href="index.html">About</a></li>
+                <li>
+                  <a class="inactive-navbar-link" href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a class="inactive-navbar-link" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </section>
 
-      <section class="uk-container about-me-section">
+    <section class="uk-section about-me-section uk-flex uk-flex-center">
+      <div class="uk-width-5-6">
         <h2 class="page-title">About me.</h2>
         <h2 class="about-me-intro">
           I'm a Perth-based web developer-in-training with a foundational
@@ -69,16 +77,26 @@
           When I'm not working or studying, I enjoy baking, gardening,
           swing-dancing, video games and dog-watching. You can find me on
           LinkedIn
-          <a href="https://www.linkedin.com/in/madeleine-gribble-466417192/"
+          <a
+            href="https://www.linkedin.com/in/madeleine-gribble-466417192/"
+            target="_blank"
+            class="uk-link-muted"
             >here</a
           >
           or visit
-          <a href="https://github.com/maddieclare">my GitHub profile</a> for
-          more examples of my work.
+          <a
+            href="https://github.com/maddieclare"
+            target="_blank"
+            class="uk-link-muted"
+            >my GitHub profile</a
+          >
+          for more examples of my work.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <section class="uk-container portfolio-section">
+    <section class="uk-section portfolio-section uk-flex uk-flex-center">
+      <div class="uk-width-5-6">
         <div
           class="uk-child-width-1-2@s uk-child-width-1-3@m"
           uk-grid="masonry: true"
@@ -88,7 +106,10 @@
               class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
               id="hangman-game"
             >
-              <a href="maddieclare.github.io/Word-Guess-Game" target="_blank">
+              <a
+                href="https://maddieclare.github.io/Word-Guess-Game"
+                target="_blank"
+              >
                 Hangman</a
               >
             </div>
@@ -98,7 +119,10 @@
               class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
               id="crystal-game"
             >
-              <a href="maddieclare.github.io/unit-4-game" target="_blank">
+              <a
+                href="https://maddieclare.github.io/unit-4-game"
+                target="_blank"
+              >
                 Crystal collector game</a
               >
             </div>
@@ -108,7 +132,10 @@
               class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
               id="trivia-game"
             >
-              <a href="maddieclare.github.io/TriviaGame" target="_blank">
+              <a
+                href="https://maddieclare.github.io/TriviaGame"
+                target="_blank"
+              >
                 Trivia game</a
               >
             </div>
@@ -118,7 +145,7 @@
               class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
               id="giphy-search"
             >
-              <a href="maddieclare.github.io/Giphy-API" target="_blank">
+              <a href="https://maddieclare.github.io/Giphy-API" target="_blank">
                 Giphy API search</a
               >
             </div>
@@ -128,7 +155,10 @@
               class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
               id="rps-game"
             >
-              <a href="maddieclare.github.io/RPS-Multiplayer" target="_blank">
+              <a
+                href="https://maddieclare.github.io/RPS-Multiplayer"
+                target="_blank"
+              >
                 Rock, paper, scissors</a
               >
             </div>
@@ -138,17 +168,21 @@
               class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
               id="happy-hour"
             >
-              <a href="jpr243.github.io/Happy-Hour" target="_blank"
+              <a href="https://jpr243.github.io/Happy-Hour" target="_blank"
                 >Happy Hour</a
               >
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <form class="uk-container contact-section">
+    <form class="uk-flex uk-flex-center contact-section">
+      <div class="uk-width-5-6">
         <fieldset class="uk-fieldset">
-          <legend class="uk-legend">Contact me</legend>
+          <legend class="uk-legend">
+            <h2 class="page-title">Contact.</h2>
+          </legend>
 
           <div class="uk-margin">
             <input
@@ -173,11 +207,11 @@
               placeholder="Your message"
             ></textarea>
           </div>
-        </fieldset>
 
-        <button class="uk-button uk-button default">Submit</button>
-      </form>
-    </div>
+          <button class="uk-button uk-button default">Submit</button>
+        </fieldset>
+      </div>
+    </form>
 
     <!-- Custom JS -->
     <script src="assets/javascript/logic.js"></script>
