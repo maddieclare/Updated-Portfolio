@@ -42,6 +42,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.index-links {
+  color: #BF0A31;
+  text-decoration: none;
+}
+
+.index-links:hover {
+  color: #999;
+  text-decoration: none;
+}
+
 .portfolio-section {
   margin-top: 300px;
   padding-bottom: 300px;
@@ -59,4 +69,8 @@ body {
 
 .contact-section {
   padding-bottom: 250px;
+}
+
+.uk-button:hover {
+  color: #BF0A31;
 }

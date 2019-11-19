@@ -80,17 +80,25 @@
           <a
             href="https://www.linkedin.com/in/madeleine-gribble-466417192/"
             target="_blank"
-            class="uk-link-muted"
+            class="index-links"
             >here</a
           >
           or visit
           <a
             href="https://github.com/maddieclare"
             target="_blank"
-            class="uk-link-muted"
+            class="index-links"
             >my GitHub profile</a
           >
           for more examples of my work.
+        </p>
+        <p>
+          <a
+            href="https://drive.google.com/open?id=1GufHBL-rey6ElgHG2EZt83MZInz_onl3"
+            target="_blank"
+            class="index-links"
+            >View my resume here.</a
+          >
         </p>
       </div>
     </section>
@@ -246,7 +254,11 @@
       </div>
     </section>
 
-    <form class="uk-flex uk-flex-center contact-section">
+    <form
+      class="uk-flex uk-flex-center contact-section"
+      action="https://formspree.io/xrggjynj"
+      method="POST"
+    >
       <div class="uk-width-5-6">
         <fieldset class="uk-fieldset">
           <legend class="uk-legend">
@@ -255,6 +267,7 @@
 
           <div class="uk-margin">
             <input
+              name="name"
               class="uk-input uk-width-1-2"
               type="text"
               placeholder="Your name"
@@ -263,6 +276,7 @@
 
           <div class="uk-margin">
             <input
+              name="_replyto"
               class="uk-input uk-width-1-2"
               type="text"
               placeholder="youremail@example.com"
@@ -271,6 +285,7 @@
 
           <div class="uk-margin">
             <textarea
+              name="message"
               class="uk-textarea uk-width-1-2"
               rows="8"
               placeholder="Your message"
