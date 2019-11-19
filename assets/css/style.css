@@ -47,51 +47,16 @@ body {
   padding-bottom: 300px;
 }
 
+.portfolio-links:hover {
+  color: #BF0A31;
+  text-decoration: none;
+  
+}
+
 .uk-card {
   box-shadow: none;
-}
-
-#hangman-game {
-  background-image: url("../images/placeholder-1.png");
-  background-size: 150%;
-  height: 200px;
-}
-
-#crystal-game {
-  background-image: url("../images/placeholder-2.png");
-  background-size: 100%;
-  height: 230px;
-}
-
-#trivia-game {
-  background-image: url("../images/placeholder-3.png");
-  background-size: 100%;
-  height: 400px;
-}
-
-#giphy-search {
-  background-image: url("../images/placeholder-4.png");
-  background-size: 100%;
-  height: 450px;
-}
-
-#happy-hour {
-  background-image: url("../images/placeholder-5.png");
-  background-size: 100%;
-  height: 240px;
-}
-
-#rps-game {
-  background-image: url("../images/placeholder-6.png");
-  background-size: 100%;
-  height: 380px;
 }
 
 .contact-section {
   padding-bottom: 250px;
 }
-
-/* .uk-legend {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-} */
