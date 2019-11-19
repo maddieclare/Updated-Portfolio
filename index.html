@@ -23,6 +23,13 @@
     <title>About</title>
   </head>
   <body>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.js"
+      integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- UIKit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit-icons.min.js"></script>
@@ -39,14 +46,16 @@
             </div>
             <div class="uk-navbar-right">
               <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="index.html">About</a></li>
+                <li class="uk-active">
+                  <a href="#" id="about-link">About</a>
+                </li>
                 <li>
-                  <a class="inactive-navbar-link" href="portfolio.html"
+                  <a class="inactive-navbar-link" href="#" id="portfolio-link"
                     >Portfolio</a
                   >
                 </li>
                 <li>
-                  <a class="inactive-navbar-link" href="contact.html"
+                  <a class="inactive-navbar-link" href="#" id="contact-link"
                     >Contact</a
                   >
                 </li>
@@ -57,7 +66,7 @@
       </div>
     </section>
 
-    <section class="uk-section about-me-section uk-flex uk-flex-center">
+    <section class="uk-section uk-flex uk-flex-center" id="about-me-section">
       <div class="uk-width-5-6">
         <h2 class="page-title">About me.</h2>
         <h2 class="about-me-intro">
@@ -104,7 +113,7 @@
     </section>
 
     <section
-      class="uk-section portfolio-section uk-flex uk-flex-center"
+      class="uk-section uk-flex uk-flex-center" id="portfolio-section"
       uk-grid
     >
       <div class="uk-width-5-6">
@@ -321,7 +330,7 @@
     </section>
 
     <form
-      class="uk-flex uk-flex-center contact-section"
+      class="uk-flex uk-flex-center" id="contact-section"
       action="https://formspree.io/xrggjynj"
       method="POST"
     >
@@ -363,7 +372,23 @@
       </div>
     </form>
 
-    <!-- Custom JS -->
-    <script src="assets/javascript/logic.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#about-link").click(function() {
+          event.preventDefault();
+          $(window).scrollTop($('#about-me-section').offset().top);
+        });
+
+        $("#portfolio-link").click(function() {
+          event.preventDefault();
+          $(window).scrollTop($('#portfolio-section').offset().top);
+        });
+
+        $("#contact-link").click(function() {
+          event.preventDefault();
+          $(window).scrollTop($('#contact-section').offset().top);
+        });
+      });
+    </script>
   </body>
 </html>

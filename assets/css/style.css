@@ -52,7 +52,7 @@ body {
   text-decoration: none;
 }
 
-.portfolio-section {
+#portfolio-section {
   margin-top: 300px;
   padding-bottom: 300px;
 }
@@ -67,7 +67,7 @@ body {
   box-shadow: none;
 }
 
-.contact-section {
+#contact-section {
   padding-bottom: 250px;
 }
 
