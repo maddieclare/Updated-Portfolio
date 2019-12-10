@@ -113,7 +113,8 @@
     </section>
 
     <section
-      class="uk-section uk-flex uk-flex-center" id="portfolio-section"
+      class="uk-section uk-flex uk-flex-center"
+      id="portfolio-section"
       uk-grid
     >
       <div class="uk-width-5-6">
@@ -305,6 +306,31 @@
                 >
                   <p>
                     <a
+                      href="https://jpr243.github.io/Happy-Hour"
+                      target="_blank"
+                      class="uk-h4 uk-margin-remove portfolio-links"
+                    >
+                      Happy Hour</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+              <div
+                class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
+              >
+                <img
+                  src="assets/images/placeholder-7.png"
+                  alt="Placeholder image"
+                />
+                <div
+                  class="uk-transition-slide-top uk-position-top uk-overlay uk-overlay-default uk-text-center"
+                >
+                  <p>
+                    <a
                       href="https://github.com/maddieclare/liri-node-app"
                       target="_blank"
                       class="uk-h4 uk-margin-remove portfolio-links"
@@ -316,12 +342,38 @@
               </div>
             </div>
           </div>
+          <div>
+            <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+              <div
+                class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle"
+              >
+                <img
+                  src="assets/images/placeholder-8.png"
+                  alt="Placeholder image"
+                />
+                <div
+                  class="uk-transition-slide-top uk-position-top uk-overlay uk-overlay-default uk-text-center"
+                >
+                  <p>
+                    <a
+                      href="https://github.com/maddieclare/bamazon"
+                      target="_blank"
+                      class="uk-h4 uk-margin-remove portfolio-links"
+                    >
+                      Bamazon App</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <form
-      class="uk-flex uk-flex-center" id="contact-section"
+      class="uk-flex uk-flex-center"
+      id="contact-section"
       action="https://formspree.io/xrggjynj"
       method="POST"
     >
@@ -367,18 +419,18 @@
       $(document).ready(function() {
         $("#about-link").click(function() {
           event.preventDefault();
-          $(window).scrollTop($('#about-me-section').offset().top);
-          $("#about-link")
+          $(window).scrollTop($("#about-me-section").offset().top);
+          $("#about-link");
         });
 
         $("#portfolio-link").click(function() {
           event.preventDefault();
-          $(window).scrollTop($('#portfolio-section').offset().top);
+          $(window).scrollTop($("#portfolio-section").offset().top);
         });
 
         $("#contact-link").click(function() {
           event.preventDefault();
-          $(window).scrollTop($('#contact-section').offset().top);
+          $(window).scrollTop($("#contact-section").offset().top);
         });
       });
     </script>
